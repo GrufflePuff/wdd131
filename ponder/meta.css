@@ -1,8 +1,35 @@
-body {
-    width: 100%;
+#wrapper {
+    background-color: #ddd;
+    width: 60%;
+    padding: 20px;
+    margin: 40px auto;
 }
 #content {
-    width: 50%;
     margin: auto;
+    padding: 40px;
+    border: 2px solid rgb(192, 190, 190);
+}
+img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+p {
+    color: #035f9c;
+}
+h1, h2, p {
     text-align: center;
+}
+.list{
+    list-style-type: none;
+}
+#topics {
+    width: 70%;
+    margin: 0 auto;
+}
+hr {
+    height: 3px;
+    background-color: #035f9c;
+    width: 80%;
+    margin: 30px auto;
 }
