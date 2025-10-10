@@ -48,12 +48,21 @@ h1 {
     padding: 5px 0;
 }
 
-nav {
+.hide {
     display: none;
 }
-
 nav a {
-    margin: 0 20px;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-top: 1px solid white;
+}
+
+nav a:hover, .menu-btn:hover {
+    color: rgb(220, 220, 220);
+    font-size: 1.2em;
 }
 
 footer {
@@ -62,6 +71,36 @@ footer {
     padding: 5px;
     font-size: 0.8em;
 }
+
+dialog img {
+    width: 80vw;
+    height: 40vh;
+    display: block;
+    max-width: 700px;
+    max-height: 600px;
+    border: none;
+}
+dialog {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    background-color: rgba(0,0,0,.75);
+    max-width: none;
+    max-height: none;
+    align-content: center;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    color: white;
+    background: none;
+    border: none;
+}
+
 @media screen and (min-width: 350px) {
     section {
         grid-auto-rows: 300px;
@@ -70,10 +109,16 @@ footer {
         width: 250px;
         height: 250px;
     }
+    dialog img {
+        height: 50vh;
+    }
 }
 @media screen and (min-width: 650px) {
     section {
         grid-template-columns: 300px 300px;
+    }
+    dialog img {
+        height: 70vh;
     }
 }
 @media screen and (min-width: 1000px) {
@@ -85,5 +130,18 @@ footer {
     }
     nav {
         display: block;
+    }
+    nav a{
+        padding: 12px;
+        text-decoration: none;
+        text-align: none;
+        border-top: none;
+        display: inline;
+    }
+    .hide {
+        display: inline-block;
+    }
+    dialog img {
+        height: 80vh;
     }
 }
