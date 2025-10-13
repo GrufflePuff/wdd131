@@ -1,0 +1,12 @@
+body {
+    width: 100%;
+}
+main a {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: none;
+}
+main a:hover {
+    font-size: 1.2em;
+}
