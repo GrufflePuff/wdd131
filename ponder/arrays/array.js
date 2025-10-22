@@ -4,7 +4,7 @@ const steps = ['one','two','three'];
 
 steps.forEach(function(item){
     console.log(item)
-})
+});
 
 let myList = document.querySelector('#myList');
 
