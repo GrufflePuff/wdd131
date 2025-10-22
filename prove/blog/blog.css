@@ -60,11 +60,6 @@ h2 {
 .description p {
     margin: 10px 0px 20px 0px;
 }
-
-.checked {
-  color: rgb(255, 221, 0);
-  text-shadow: black .5px 1px 1px;
-}
 .stars {
     margin-top: 8px;
 }
