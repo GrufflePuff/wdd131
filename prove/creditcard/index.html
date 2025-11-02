@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="creditcard.css">
+    <script src="creditcard.js" defer></script>
     <title>Credit Card</title>
 </head>
 <body>
-    
+    <section class="errors"></section>
+    <form id="checkoutForm">
+        <div id="front-card">
+            <p id="total">TOTAL: 199</p>
+            <p id="image">💳</p>
+            <div id="card-number">
+                <label id="creditCard" for="creditCardNumber">CARD NUMBER</label>
+                <input
+                type="text"
+                id="creditCardNumber"
+                name="creditCardNumber"
+                pattern="[0-9]{16}"
+                placeholder="XXXX XXXX XXXX XXXX"
+                required
+            />
+            </div>
+            <div id="card-holder">
+                <label id="cardHolderLabel" for="cardHolder">CARD HOLDER</label>
+                <input type="text" id="cardHolder" name="cardHolder" placeholder="John Doe" required>
+            </div>
+            <div id="cardExpiration">
+                <label id="expirationDate">EXPIRATION</label>
+                <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate" required>
+                <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate" required>
+            </div>
+        </div>
+        <div id="back-card">
+            <div id="bar"></div>
+            <div id="verification-code">
+                <label id="codeLabel" for="verificationCode">CVC/CVV</label>
+                <input type="text" id="verificationCode" name="verificationCode" placeholder="XXX" required>
+            </div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
 </body>
 </html>
