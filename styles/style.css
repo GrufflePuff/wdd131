@@ -10,16 +10,18 @@ main a {
 main a:hover {
     font-size: 1.2em;
 }
-.chicken {
+.hidden {
+    display: none;
+}
+#chicken {
     width: 50px;
     height: 50px;
     padding: 0;
     margin: 0; 
 }
-.chicken:hover {
+.shake:hover {
     box-shadow: rgb(41, 41, 41) 1px 1px 2px;
-    animation: shake 0.3s;
-    animation-iteration-count: infinite;
+    animation: shake 0.3s infinite;
 }
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }

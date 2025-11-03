@@ -1,17 +1,9 @@
-const chicken = document.querySelector('#chicken');
+const chicken = document.getElementById("chicken");
+const chickenImg = document.getElementById("chickenImg");
 
-// Event listener for opening the modal
-chicken.addEventListener('click', openModal);
+chicken.addEventListener("click", toggleChicken)
 
-function openModal(e) {
-    console.log(e.target);
-// Code to show modal  - Use event parameter 'e'   
-    
+function toggleChicken() {
+    chickenImg.classList.toggle("hidden");
+    chicken.classList.toggle("shake");
 }
-
-// Close modal if clicking outside the image
-modal.addEventListener('click', (event) => {
-    if (event.target === chicken) {
-        chicken.close();
-    }
-});
