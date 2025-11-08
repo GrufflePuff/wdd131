@@ -9,7 +9,7 @@
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.9);
     width: 400px; 
-    margin: 100px auto;
+    margin: 50px auto 0 auto;
   }
 
   .image{
@@ -34,6 +34,23 @@
   .stats p {
     margin: 5px 0;
     color: #f0f4f8;
+    align-self: center;
+  }
+
+  .stats h3 {
+    color: white;
+    width: 80px;
+  }
+  
+  .class, .level, .health {
+    display: grid;
+    grid-template-columns: 1fr 5fr; 
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 
   .buttons {
@@ -54,5 +71,5 @@
 
   button:hover {
     background-color: #58605a;
-  }            
+  }
                     
