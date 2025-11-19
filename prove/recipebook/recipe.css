@@ -48,17 +48,31 @@ h1 {
     max-width: 112px;
 }
 
-#searchBar p {
+#search {
     color: rgb(135, 135, 135);
+    width: 100%;
+    font-size: 1.0em;
+    border: none;
+}
+#search:focus {
+    outline: none;
+}
+
+header button {
+    all: unset;
+    display: flex;
+    align-self: center;
+    cursor: pointer;
 }
 #searchIcon {
     min-width: 20px;
     max-width: 36px;
+    height: 100%;
     padding-left: 5px;
     border-left: 1px solid rgb(152, 152, 152);
 }
 
-main {
+.recipe {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     padding: 3vw;
@@ -67,7 +81,7 @@ main {
 .info p {
     display: none;
 }
-main img {
+.recipe img {
     width: 100%;
 }
 h2 {
@@ -86,12 +100,16 @@ h2 {
     width: 36px;
     margin: 0px 1px 0px 1px;
 }
+.button {
+    margin: 0;
+    padding: 3px;
+}
 
 @media screen and (min-width: 675px) {
     #page-title {
     margin-top: 60px;
     }
-    main img {
+    .recipe img {
         min-width: 300px;
         max-width: 450px;
         padding-right: 2vw;
@@ -100,12 +118,11 @@ h2 {
         margin-top: 3vw;
         display: block;
     }
-    .info {
+    .infoContainer {
         display: flex;
-        justify-content: center;
         flex-flow: column nowrap;
     }
-    main {
+    .recipe {
         display: flex;
         padding: 20px;
     }
@@ -119,8 +136,27 @@ h2 {
         font-size: 60px;
     }
     .button {
-        width: 80px;
+        width: fit-content;
         height: 30px;
         font-size: 1.1em;
+        padding: 0px 5px 0px 5px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
+    .buttonContainer {
+        display: flex;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    .info {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .infoContainer {
+        display: flex;
     }
 }
