@@ -1,0 +1,26 @@
+#logo {
+    width: 128px;
+}
+
+.primary, .secondary, .accent1, .accent2 {
+    color: white;
+}
+.primary {
+    background: #094B24;
+}
+.secondary {
+    background: #3F3F3F;
+}
+.accent1 {
+    background: #9D7435;
+}
+.accent2 {
+    background: #664000;
+}
+
+.colored {
+    color: #9D7435;
+}
+.image {
+    max-width: 200px;
+}
