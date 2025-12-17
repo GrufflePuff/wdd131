@@ -116,8 +116,9 @@ footer {
 }
 .wood-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 80vw;
+    min-height: 300px;
     max-width: 450px;
     background: var(--primary);
     box-sizing: border-box;
@@ -125,10 +126,12 @@ footer {
     border: 3px solid var(--accent1)
 }
 .wood-img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
 }
 .wood-grain {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
 }
 .info {
     display: flex;
@@ -145,7 +148,8 @@ footer {
     margin-bottom: 20px;
     background: var(--secondary);
     height: 30px;
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     color: white;
     align-items: center;
     font-size: 1.2em;
@@ -157,6 +161,12 @@ button {
 }
 label {
     height: 100%;
+}
+
+@media (min-width: 450px) {
+    .wood-box {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media (min-width: 1200px) {
     body {
