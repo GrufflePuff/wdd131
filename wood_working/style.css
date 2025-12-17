@@ -81,7 +81,7 @@ h2 {
     margin: 5vw;
     color: var(--primary)
 }
-p {
+#purpose {
     background: var(--accent1);
     color: white;
     font-size: 1.2em;
@@ -95,13 +95,45 @@ p {
 }
 footer {
     width: 100%;
+    margin-top: 40px;
 }
 .social-img {
     width: 15vw;
     max-width: 120px;
     margin: 0 5vw 0 5vw;
 }
-
+#woods {
+    display: flex;
+    flex-wrap:wrap;
+}
+.wood-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+    max-width: 450px;
+    background: var(--accent1);
+    box-sizing: border-box;
+    margin: 10px auto 16px auto;
+}
+.wood-img {
+    width: 200px;
+}
+.wood-grain {
+    width: 200px;
+}
+.info {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.info li {
+    width: 100%;
+    list-style: None;
+    color: white;
+}
+#searchbar {
+    margin-bottom: 20px;
+}
 @media (min-width: 1200px) {
     body {
         width: 1000px;
