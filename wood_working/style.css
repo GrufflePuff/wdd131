@@ -1,0 +1,117 @@
+
+
+:root {--primary: #094B24;}
+:root {--secondary: #3F3F3F;}
+:root {--accent1: #9D7435;}
+:root {--accent2: #664000;}
+
+
+@font-face {
+    font-family: KiteOne;
+    src: url(fonts/Kite_One/KiteOne-Regular.ttf);
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(fonts/Quicksand/Quicksand-VariableFont_wght.ttf)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: KiteOne;
+}
+
+body {
+    max-width: 100%;
+    margin: 16px 5vw 5vw 5vw;
+    text-align: center;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--accent1)
+}
+.main-nav {
+    list-style: None;
+    display: flex;
+    align-items: center;
+}
+.main-nav li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 10px;
+    background: var(--secondary);
+    width: 20vw;
+    max-width: 80px;
+    height: 90%;
+}
+.main-nav li a {
+    color: white;
+    text-decoration: None;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+}
+.main-nav li a:hover {
+    cursor: pointer;
+}
+#logo {
+    width: 20vw;
+    height: 20vw;
+    max-height: 80px;
+    max-width: 80px;
+}
+main {
+    width: 100%;
+}
+h2 {
+    font-size: 1.4em;
+    margin: 5vw;
+    color: var(--primary)
+}
+p {
+    background: var(--accent1);
+    color: white;
+    font-size: 1.2em;
+    margin: 15vw 0 15vw 0;
+    padding: 5px;
+    font-family: Quicksand;
+}
+#hero {
+    width: 90%;
+    max-width: 1000px;
+}
+footer {
+    width: 100%;
+}
+.social-img {
+    width: 15vw;
+    max-width: 120px;
+    margin: 0 5vw 0 5vw;
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 1000px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+    footer{
+        margin-bottom: 20px;
+    }
+}
